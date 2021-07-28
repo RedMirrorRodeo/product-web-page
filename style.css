@@ -1,0 +1,129 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(./177412.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+header{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+}
+.logo-container,.cart{
+  display: flex;
+}
+.logo-container{
+  flex: 1;
+  position: relative;
+  top: 10px;
+  right: 80px;
+}
+nav{
+  flex: 3;
+}
+.nav-links{
+  display: flex;
+  justify-content:space-around ;
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 18px;
+  color: #5f5f79;
+}
+.cart{
+  width: 50px;
+  height: 35px;
+}
+.presentation{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  min-height: 80vh;
+} 
+.introduction{
+  flex: 1;
+}
+.intro-text{
+  font-size: 20px;
+  font-weight: 400px;
+}
+h1{
+  color: #5f5f79;
+}
+.intro-text p{
+  margin-top: 20px;
+  font-size: 18px;
+  color: #5f5f79;
+}
+.cta{
+  margin: 40px 0px 0px 0px;
+}
+.cta-select{
+  border: 2px solid lightblue;
+  background: transparent;
+  color: lightblue;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  margin: 30px 0px 0px 30px;
+}
+.cta-add{
+  background: lightblue;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  
+}
+.cover img{
+  height: 40vh;
+  filter: drop-shadow(0px 5px 3px black); 
+  animation: drop 1.5s ease;
+}
+@keyframes drop{
+  0%{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1024px){
+  .presentation {
+    flex-direction: column;    
+  }
+  .introduction{
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1{
+    font-size: 30px;
+  }
+  .intro-text p{
+    font-size: 18px;
+  }
+  .cta{
+    padding: 10px 0px 0px 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
